@@ -1,0 +1,97 @@
+@mixin fontUbuntu {
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+@mixin textAlign {
+    text-align: left;
+}
+
+@mixin textShadow {
+    text-shadow: 1px 1px 4px #494949;
+}
+
+@mixin boxShadow {
+    box-shadow: 1px 1px 4px #494949;
+}
+
+// Color pallete
+$first-color:#D5DBD5;
+$second-color: #323232;
+$third-color: #3F8D1A;
+
+//Estilização da página
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    @include fontUbuntu();
+   
+}
+
+header span {
+    background: url('../images/menu-icon.svg') no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: $third-color;
+    font-weight: 400;
+    font-size: 25pt;
+
+    &:hover {
+        text-decoration: none; 
+        color: $third-color;
+    }
+}
+
+
+.img-fluid { 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
+#welcome {
+    height: 120vh;
+    background-color: $first-color;
+    @include fontUbuntu();
+}
+
+#welcome h1 {
+    font-weight: 700;
+    font-size: 45pt;
+    color: $second-color;
+}
+
+#welcome div {
+    color: $first-color;
+    background-color: $second-color; 
+    margin: auto;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+#welcome div h2 {
+    width: 22%;
+    font-size: 30pt;
+    border: 4px solid $first-color;
+    border-radius: 10px;
+}
+
+#welcome div p {
+    @include textAlign();
+    font-size: 20pt;
+}
+
+#welcome div ul {
+    @include textAlign();
+    font-size: 20pt;
+}
