@@ -1,3 +1,4 @@
+/*CSS Document*/
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ header a:hover {
   color: #3F8D1A;
 }
 
-.img-fluid {
+figure .img-fluid {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;

@@ -1,3 +1,7 @@
+/*CSS Document*/
+
+//Mixins para estilos mais utilizados
+
 @mixin fontUbuntu {
     font-family: 'Ubuntu', sans-serif;
 } 
@@ -28,30 +32,28 @@ $third-color: #3F8D1A;
 
 header {
     @include fontUbuntu();
-   
-}
+    
+    span {
+        background: url('../images/menu-icon.svg') no-repeat;
+        background-size: 100%;
+        width: 30px;
+        height: 30px;
+    }
 
-header span {
-    background: url('../images/menu-icon.svg') no-repeat;
-    background-size: 100%;
-    width: 30px;
-    height: 30px;
-}
-
-header a {
-    text-decoration: none;
-    color: $third-color;
-    font-weight: 400;
-    font-size: 25pt;
-
-    &:hover {
-        text-decoration: none; 
+    a {
+        text-decoration: none;
         color: $third-color;
+        font-weight: 400;
+        font-size: 25pt;
+    
+        &:hover {
+            text-decoration: none; 
+            color: $third-color;
+        }
     }
 }
 
-
-.img-fluid { 
+figure .img-fluid { 
 user-select: none;
 -moz-user-select: none;
 -webkit-user-drag: none;
@@ -63,35 +65,35 @@ user-select: none;
     height: 100vh;
     background-color: $first-color;
     @include fontUbuntu();
-}
 
-#welcome h1 {
-    font-weight: 700;
-    font-size: 45pt;
-    color: $second-color;
-}
+    h1 {
+        font-weight: 700;
+        font-size: 45pt;
+        color: $second-color;
+    }
 
-#welcome div {
-    color: $first-color;
-    background-color: $second-color; 
-    margin: auto;
-    border-radius: 20px;
-    flex-direction: column;
-}
+    div {
+        color: $first-color;
+        background-color: $second-color; 
+        margin: auto;
+        border-radius: 20px;
+        flex-direction: column;
 
-#welcome div h2 {
-    width: 22%;
-    font-size: 30pt;
-    border: 4px solid $first-color;
-    border-radius: 10px;
-}
+        h2 {
+            width: 22%;
+            font-size: 30pt;
+            border: 4px solid $first-color;
+            border-radius: 10px;
+        }
 
-#welcome div p {
-    @include textAlign();
-    font-size: 20pt;
-}
+        p {
+            @include textAlign();
+            font-size: 20pt;
+        }
 
-#welcome div ul {
-    @include textAlign();
-    font-size: 20pt;
+        ul {
+            @include textAlign();
+            font-size: 20pt;
+        }
+    }
 }
