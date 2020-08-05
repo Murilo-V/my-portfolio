@@ -1,5 +1,3 @@
-/*SASS Document*/
-
 //mixins para estilos mais utilizados
 
 @mixin fontUbuntu {
@@ -39,6 +37,7 @@ header {
         background-size: 100%;
         width: 30px;
         height: 30px;
+        cursor: pointer;
     }
 
     a {
@@ -53,6 +52,63 @@ header {
         }
     }
 }
+
+//estilização menu overlay
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0; 
+    background-color: $second-color;
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    @include fontUbuntu();
+    font-weight: 500;
+
+        a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block; 
+            transition: 0.3s;
+
+            &:hover {
+                color: #f1f1f1;
+                text-decoration: none;
+            }
+            &:focus {
+                color: #f1f1f1;
+                text-decoration: none;
+            }
+         }
+
+         .closebtn {
+            position: absolute;
+            top: 50px;
+            right: 45px;
+            font-size: 60px;
+          }
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
 
 //bloquear a seleção da imagem
 figure .img-fluid { 

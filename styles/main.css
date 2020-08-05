@@ -1,4 +1,3 @@
-/*SASS Document*/
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +13,7 @@ header .menu-icon {
   background-size: 100%;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 header a {
@@ -26,6 +26,67 @@ header a {
 header a:hover {
   text-decoration: none;
   color: #3F8D1A;
+}
+
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #323232;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 figure .img-fluid {

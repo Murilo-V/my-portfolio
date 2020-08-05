@@ -14,9 +14,3 @@ function changeHeader() {
 };
 
 changeHeader();
-
-// $(document).ready(function(){
-// 	$("#welcome").scroll(function(){
-// 		$("#menu").css("background","#D5DBD5");
-// 	});
-// });
