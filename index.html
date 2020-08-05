@@ -6,25 +6,26 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <title>Responsividade</title>
+    <title>Murilo V. Alves - Portfólio</title>
 </head>
 <body>
     <div class="container-fluid m-0 p-0 row">
-        <header id="menu" class="fixed-top d-flex justify-content-between align-items-center p-2">
-            <span></span>
+        <!-- barra de menu -->
+        <header id="navbar" class="fixed-top d-flex justify-content-between align-items-center p-2">
+            <span class="menu-icon"></span>
             <a href="index.html">murilo.</a>
         </header>
-
+        <!-- imagem que aparece ao entrar na página -->
         <figure class="col-12 m-0 p-0">
-            <img src="images/reception-background.svg" class="img-fluid m-0 p-0">
+            <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
         </figure>
 
-        <main id="welcome" class="col-12 m-0 p-0 text-center">
+        <!-- conteúdo principal da página -->
+        <main id="home-page" class="home-page col-12 m-0 p-0 text-center">
             <h1 class="mb-4">Olá, seja muito bem-vindo.</h1>
 
-            <div class="d-flex align-items-center p-3 col-11">
+            <div class="about d-flex align-items-center p-3 col-11">
                 <h2 class="mb-3 p-0">SOBRE MIM</h2>
 
                 <p>Sou desenvolvedor junior e desde a infância me interesso e tenho contato com computadores. Aprendi de forma autodidata sobre design gráfico e acabei por conhecer e me formar na área de Tecnologia da Informação.</p>
@@ -38,6 +39,7 @@
             </div>
         </main>
     </div>  
+    <!-- script que troca cor da barra de menu ao rolar a página -->
     <script src="scripts/header.js"></script>  
 </body>
 </html>

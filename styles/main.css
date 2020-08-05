@@ -1,4 +1,4 @@
-/*CSS Document*/
+/*SASS Document*/
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ header {
   font-family: 'Ubuntu', sans-serif;
 }
 
-header span {
+header .menu-icon {
   background: url("../images/menu-icon.svg") no-repeat;
   background-size: 100%;
   width: 30px;
@@ -36,19 +36,19 @@ figure .img-fluid {
   -ms-user-select: none;
 }
 
-#welcome {
+.home-page {
   height: 100vh;
   background-color: #D5DBD5;
   font-family: 'Ubuntu', sans-serif;
 }
 
-#welcome h1 {
+.home-page h1 {
   font-weight: 700;
   font-size: 45pt;
   color: #323232;
 }
 
-#welcome div {
+.home-page .about {
   color: #D5DBD5;
   background-color: #323232;
   margin: auto;
@@ -59,19 +59,19 @@ figure .img-fluid {
           flex-direction: column;
 }
 
-#welcome div h2 {
+.home-page .about h2 {
   width: 22%;
   font-size: 30pt;
   border: 4px solid #D5DBD5;
   border-radius: 10px;
 }
 
-#welcome div p {
+.home-page .about p {
   text-align: left;
   font-size: 20pt;
 }
 
-#welcome div ul {
+.home-page .about ul {
   text-align: left;
   font-size: 20pt;
 }

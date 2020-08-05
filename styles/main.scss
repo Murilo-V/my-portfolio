@@ -1,6 +1,6 @@
-/*CSS Document*/
+/*SASS Document*/
 
-//Mixins para estilos mais utilizados
+//mixins para estilos mais utilizados
 
 @mixin fontUbuntu {
     font-family: 'Ubuntu', sans-serif;
@@ -18,22 +18,23 @@
     box-shadow: 1px 1px 4px #494949;
 }
 
-// Color pallete
+// paleta de cores
 $first-color:#D5DBD5;
 $second-color: #323232;
 $third-color: #3F8D1A;
 
-//Estilização da página
+//retirar margin, padding e border padrão dos navegadores
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+//estilizar a barra de menu
 header {
     @include fontUbuntu();
     
-    span {
+    .menu-icon {
         background: url('../images/menu-icon.svg') no-repeat;
         background-size: 100%;
         width: 30px;
@@ -53,6 +54,7 @@ header {
     }
 }
 
+//bloquear a seleção da imagem
 figure .img-fluid { 
 user-select: none;
 -moz-user-select: none;
@@ -61,7 +63,8 @@ user-select: none;
 -ms-user-select: none;
 }
 
-#welcome {
+//estilização do conteúdo principal
+.home-page {
     height: 100vh;
     background-color: $first-color;
     @include fontUbuntu();
@@ -72,7 +75,7 @@ user-select: none;
         color: $second-color;
     }
 
-    div {
+    .about {
         color: $first-color;
         background-color: $second-color; 
         margin: auto;
