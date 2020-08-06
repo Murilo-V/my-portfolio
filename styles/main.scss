@@ -20,6 +20,7 @@
 $first-color:#D5DBD5;
 $second-color: #323232;
 $third-color: #3F8D1A;
+$fourth-color: #8A8A8A;
 
 //retirar margin, padding e border padrão dos navegadores
 * {
@@ -71,19 +72,23 @@ header {
             padding: 8px;
             text-decoration: none;
             font-size: 36px;
-            color: #818181;
+            color: $fourth-color;
             display: block; 
             transition: 0.3s;
 
-            &:hover {
-                color: #f1f1f1;
-                text-decoration: none;
-            }
-            &:focus {
-                color: #f1f1f1;
+            &:hover, &:focus {
+                color: $first-color;
                 text-decoration: none;
             }
          }
+
+         .overlay-content {
+            position: relative;
+            top: 25%; 
+            width: 100%; 
+            text-align: center;
+            margin-top: 30px;
+          }
 
          .closebtn {
             position: absolute;
@@ -93,13 +98,7 @@ header {
           }
   }
   
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center;
-    margin-top: 30px;
-  }
+
   
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
@@ -111,12 +110,23 @@ header {
   }
 
 //bloquear a seleção da imagem
-figure .img-fluid { 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+.reception {
+    .scroll-down {
+        background-image: url('../images/scroll-down.svg');
+        background-size: 100%;
+        position: absolute;
+        width: 47.75px;
+        height: 171.65px;
+        top: 40vh;
+    }
+
+    .img-fluid { 
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        }
 }
 
 //estilização do conteúdo principal

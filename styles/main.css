@@ -47,20 +47,23 @@ header a:hover {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #8A8A8A;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.overlay a:hover {
-  color: #f1f1f1;
+.overlay a:hover, .overlay a:focus {
+  color: #D5DBD5;
   text-decoration: none;
 }
 
-.overlay a:focus {
-  color: #f1f1f1;
-  text-decoration: none;
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay .closebtn {
@@ -68,14 +71,6 @@ header a:hover {
   top: 50px;
   right: 45px;
   font-size: 60px;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
 }
 
 @media screen and (max-height: 450px) {
@@ -89,7 +84,16 @@ header a:hover {
   }
 }
 
-figure .img-fluid {
+.reception .scroll-down {
+  background-image: url("../images/scroll-down.svg");
+  background-size: 100%;
+  position: absolute;
+  width: 47.75px;
+  height: 171.65px;
+  top: 40vh;
+}
+
+.reception .img-fluid {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;

@@ -1,5 +1,5 @@
 function changeHeader() {
-    const header = document.getElementById('navbar'); // colocar em cache
+    const header = document.getElementById('navbar');
     
     window.addEventListener('scroll', function (){
         if (window.scrollY > 0) {

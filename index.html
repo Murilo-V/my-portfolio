@@ -6,37 +6,45 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/overlay-menu.js"></script>
+    <script src="scripts/scroll.js"></script>
+ 
 
     <title>Murilo V. Alves - Portfólio</title>
 </head>
 <body>
     <div class="container-fluid m-0 p-0 row">
-          <!-- menu overlay -->
-          <div id="myNav" class="overlay">
+         <!-- barra de menu -->
+         <header id="navbar" class="fixed-top d-flex justify-content-between align-items-center p-2">
+            <span onclick="openNav()" class="menu-icon"></span>
+            <a href="index.html">murilo.</a>
+        </header>
+
+        <!-- menu overlay -->
+        <div id="overlay" class="overlay">
             <!-- botão que fecha o overlay -->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           
             <!-- conteúdo do overlay -->
             <div class="overlay-content">
-              <a href="#">Sobre mim</a>
-              <a href="#">Habilidades</a>
-              <a href="#">Projetos</a>
-              <a href="#">Contato</a>
+              <a href="#home-page" onclick="closeNav()">Sobre mim</a>
+              <a href="index.html" onclick="closeNav()">Habilidades</a>
+              <a href="index.html" onclick="closeNav()">Projetos</a>
+              <a href="index.html" onclick="closeNav()">Contato</a>
             </div>
         </div>
         
-        <!-- barra de menu -->
-        <header id="navbar" class="fixed-top d-flex justify-content-between align-items-center p-2">
-            <span onclick="openNav()" class="menu-icon"></span>
-            <a href="index.html">murilo.</a>
-        </header>
-
-        <!-- imagem que aparece ao entrar na página -->
-        <figure class="col-12 m-0 p-0">
-            <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
-        </figure>
-
+        <!-- recepção da home-page -->
+        <div id="reception" class="reception col-12 m-0 p-0">
+            <!-- scroll down -->
+            <a href="#home-page"><span class="scroll-down"></span></a>
+             <!-- imagem da recepção -->
+            <figure class="m-0 p-0">
+                <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
+            </figure>
+        </div>
+       
         <!-- conteúdo principal da página -->
         <main id="home-page" class="home-page col-12 m-0 p-0 text-center">
             <h1 class="mb-4">Olá, seja muito bem-vindo.</h1>
