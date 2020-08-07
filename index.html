@@ -10,7 +10,6 @@
     <script src="scripts/overlay-menu.js"></script>
     <script src="scripts/scroll.js"></script>
  
-
     <title>Murilo V. Alves - Portfólio</title>
 </head>
 <body>
@@ -28,7 +27,7 @@
           
             <!-- conteúdo do overlay -->
             <div class="overlay-content">
-              <a href="#home-page" onclick="closeNav()">Sobre mim</a>
+              <a href="#" onclick="closeNav();homePage()">Sobre mim</a>
               <a href="index.html" onclick="closeNav()">Habilidades</a>
               <a href="index.html" onclick="closeNav()">Projetos</a>
               <a href="index.html" onclick="closeNav()">Contato</a>
@@ -38,7 +37,7 @@
         <!-- recepção da home-page -->
         <div id="reception" class="reception col-12 m-0 p-0">
             <!-- scroll down -->
-            <a href="#home-page"><span class="scroll-down"></span></a>
+            <span class="scroll-down" onclick="homePage()"></span>
              <!-- imagem da recepção -->
             <figure class="m-0 p-0">
                 <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">

@@ -87,6 +87,7 @@ header a:hover {
 .reception .scroll-down {
   background-image: url("../images/scroll-down.svg");
   background-size: 100%;
+  cursor: pointer;
   position: absolute;
   width: 47.75px;
   height: 171.65px;
