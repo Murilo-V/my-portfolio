@@ -84,7 +84,7 @@ header a:hover {
   }
 }
 
-.reception .scroll-down {
+.home-page .reception .scroll-down {
   background-image: url("../images/scroll-down.svg");
   background-size: 100%;
   cursor: pointer;
@@ -94,7 +94,7 @@ header a:hover {
   top: 40vh;
 }
 
-.reception .img-fluid {
+.home-page .reception .img-fluid {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -102,19 +102,18 @@ header a:hover {
   -ms-user-select: none;
 }
 
-.home-page {
-  height: 100vh;
+.home-page .presentation {
   background-color: #D5DBD5;
   font-family: 'Ubuntu', sans-serif;
 }
 
-.home-page h1 {
+.home-page .presentation h1 {
   font-weight: 700;
   font-size: 45pt;
   color: #323232;
 }
 
-.home-page .about {
+.home-page .presentation .about {
   color: #D5DBD5;
   background-color: #323232;
   margin: auto;
@@ -125,20 +124,84 @@ header a:hover {
           flex-direction: column;
 }
 
-.home-page .about h2 {
+.home-page .presentation .about h2, .home-page .presentation .about h3 {
   width: 22%;
   font-size: 30pt;
   border: 4px solid #D5DBD5;
   border-radius: 10px;
 }
 
-.home-page .about p {
+.home-page .presentation .about p {
   text-align: left;
   font-size: 20pt;
 }
 
-.home-page .about ul {
+.home-page .presentation .about ul {
   text-align: left;
   font-size: 20pt;
+}
+
+.home-page .skills {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #3F8D1A;
+  height: 120vh;
+}
+
+.home-page .skills .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .skills .hard-skills {
+  margin: auto;
+  color: #3F8D1A;
+  background-color: #D5DBD5;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page .skills .hard-skills h2 {
+  width: 25%;
+  font-size: 30pt;
+  border: 4px solid #3F8D1A;
+  border-radius: 10px;
+}
+
+.home-page .skills .hard-skills .javascript {
+  background-image: url("../images/hard-skills-icons/javascript.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .html {
+  background-image: url("../images/hard-skills-icons/html.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .css {
+  background-image: url("../images/hard-skills-icons/css.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .c-sharp {
+  background-image: url("../images/hard-skills-icons/c-sharp.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
 }
 /*# sourceMappingURL=main.css.map */

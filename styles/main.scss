@@ -109,61 +109,126 @@ header {
     }
   }
 
-//bloquear a seleção da imagem
-.reception {
-    .scroll-down {
-        background-image: url('../images/scroll-down.svg');
-        background-size: 100%;
-        cursor: pointer;
-        position: absolute;
-        width: 47.75px;
-        height: 171.65px;
-        top: 40vh;
-    }
 
-    .img-fluid { 
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        }
-}
+
 
 //estilização do conteúdo principal
 .home-page {
-    height: 100vh;
-    background-color: $first-color;
-    @include fontUbuntu();
-
-    h1 {
-        font-weight: 700;
-        font-size: 45pt;
-        color: $second-color;
+    .reception { 
+        .scroll-down {
+            background-image: url('../images/scroll-down.svg');
+            background-size: 100%;
+            cursor: pointer;
+            position: absolute;
+            width: 47.75px;
+            height: 171.65px;
+            top: 40vh;
+        }
+    
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            }
     }
 
-    .about {
-        color: $first-color;
-        background-color: $second-color; 
-        margin: auto;
-        border-radius: 20px;
-        flex-direction: column;
-
-        h2 {
-            width: 22%;
-            font-size: 30pt;
-            border: 4px solid $first-color;
-            border-radius: 10px;
+    .presentation {
+        background-color: $first-color;
+        @include fontUbuntu(); 
+    
+        h1 {
+            font-weight: 700;
+            font-size: 45pt;
+            color: $second-color;
         }
-
-        p {
-            @include textAlign();
-            font-size: 20pt;
-        }
-
-        ul {
-            @include textAlign();
-            font-size: 20pt;
+    
+        .about {
+            color: $first-color;
+            background-color: $second-color; 
+            margin: auto;
+            border-radius: 20px;
+            flex-direction: column;
+    
+            h2,h3 {
+                width: 22%;
+                font-size: 30pt;
+                border: 4px solid $first-color;
+                border-radius: 10px;
+            }
+    
+            p {
+                @include textAlign();
+                font-size: 20pt;
+            }
+    
+            ul {
+                @include textAlign();
+                font-size: 20pt;
+            }
         }
     }
+
+    .skills {
+        @include fontUbuntu();
+        background-color: $third-color;
+        height: 120vh;
+
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .hard-skills {
+            margin: auto;
+            color: $third-color;
+            background-color: $first-color;
+            border-radius: 20px;
+            flex-direction: column;
+
+            h2 {
+                width: 25%;
+                font-size: 30pt;
+                border: 4px solid $third-color;
+                border-radius: 10px;
+            }
+
+            .javascript {
+                background-image: url('../images/hard-skills-icons/javascript.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .html {
+                background-image: url('../images/hard-skills-icons/html.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .css {
+                background-image: url('../images/hard-skills-icons/css.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .c-sharp {
+                background-image: url('../images/hard-skills-icons/c-sharp.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+        }
+    }    
 }
+

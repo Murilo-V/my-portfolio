@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid m-0 p-0 row">
          <!-- barra de menu -->
-         <header id="navbar" class="fixed-top d-flex justify-content-between align-items-center p-2">
+        <header id="navbar" class="fixed-top d-flex justify-content-between align-items-center p-2">
             <span onclick="openNav()" class="menu-icon"></span>
             <a href="index.html">murilo.</a>
         </header>
@@ -27,38 +27,55 @@
           
             <!-- conteúdo do overlay -->
             <div class="overlay-content">
-              <a href="#" onclick="closeNav();homePage()">Sobre mim</a>
-              <a href="index.html" onclick="closeNav()">Habilidades</a>
+              <a href="#" onclick="welcomeScroll();closeNav()">Sobre mim</a>
+              <a href="#" onclick="skillsScroll();closeNav()">Habilidades</a>
               <a href="index.html" onclick="closeNav()">Projetos</a>
               <a href="index.html" onclick="closeNav()">Contato</a>
             </div>
         </div>
         
-        <!-- recepção da home-page -->
-        <div id="reception" class="reception col-12 m-0 p-0">
-            <!-- scroll down -->
-            <span class="scroll-down" onclick="homePage()"></span>
-             <!-- imagem da recepção -->
-            <figure class="m-0 p-0">
-                <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
-            </figure>
-        </div>
-       
         <!-- conteúdo principal da página -->
-        <main id="home-page" class="home-page col-12 m-0 p-0 text-center">
-            <h1 class="mb-4">Olá, seja muito bem-vindo.</h1>
+        <main id="home-page" class="home-page col-12 m-0 p-0">
+            <!-- recepção da home-page -->
+            <div id="reception" class="reception col-12 m-0 p-0">
+                <!-- scroll down -->
+                <span class="scroll-down" onclick="welcomeScroll()"></span>
+                <!-- imagem da recepção -->
+                <figure class="m-0 p-0">
+                    <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
+                </figure>
+            </div>
+            <!-- apresentação -->
+            <div id="presentation" class="presentation text-center m-0 p-0">
+                <h1 class="mb-4">Olá, seja muito bem-vindo.</h1>
 
-            <div class="about d-flex align-items-center p-3 col-11">
-                <h2 class="mb-3 p-0">SOBRE MIM</h2>
+                <div class="about d-flex align-items-center p-3 mb-5 col-11">
+                    <h2 class="mb-3 p-0">SOBRE MIM</h2>
 
-                <p>Sou desenvolvedor junior e desde a infância me interesso e tenho contato com computadores. Aprendi de forma autodidata sobre design gráfico e acabei por conhecer e me formar na área de Tecnologia da Informação.</p>
+                    <p>Sou desenvolvedor junior e desde a infância me interesso e tenho contato com computadores. Aprendi de forma autodidata sobre design gráfico e acabei por conhecer e me formar na área de Tecnologia da Informação.</p>
            
-                <h2 class="mb-3 p-0">FORMAÇÃO</h2>
-                <ul>
-                    <li>Bootcamp UX/UI Design - How Bootcamps, 2020 - 2020;</li>
-                    <li>Curso Técnico de Nível Médio em Informática - Senac, 2018 - 2020;</li>
-                    <li>Certificação Cisco IT Essentials - Cisco Networking Academy 2019 - 2019.</li>
-                </ul>
+                    <h3 class="mb-3 p-0">FORMAÇÃO</h2>
+                    <ul>
+                        <li>Bootcamp UX/UI Design - How Bootcamps, 2020 - 2020;</li>
+                        <li>Curso Técnico de Nível Médio em Informática - Senac, 2018 - 2020;</li>
+                        <li>Certificação Cisco IT Essentials - Cisco Networking Academy 2019 - 2019.</li>
+                    </ul>
+                </div>
+                </br>
+            </div>
+
+            <div id="skills" class="skills m-0 p-0 text-center">
+                <img src="images/presentation-skills.svg" class="img-fluid m-0 p-0">
+
+                <div id="hard-skills" class="mt-5 hard-skills d-flex align-items-center p-3 col-11">
+                    <h2 class="mb-3 p-0">HABILIDADES</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="javascript mr-5"></span>
+                        <span class="html mr-5"></span>
+                        <span class="css mr-5"></span>
+                        <span class="c-sharp"></span>
+                    </div>
+                </div>
             </div>
         </main>
     </div>  
