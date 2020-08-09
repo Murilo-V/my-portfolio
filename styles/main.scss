@@ -173,7 +173,6 @@ header {
     .skills {
         @include fontUbuntu();
         background-color: $third-color;
-        height: 120vh;
 
         .img-fluid { 
             user-select: none;
@@ -228,7 +227,113 @@ header {
                 width: 122.74px;
                 height: 166px;
             }
+
+            .php {
+                background-image: url('../images/hard-skills-icons/php.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .mysql {
+                background-image: url('../images/hard-skills-icons/mysql.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .sqlserver {
+                background-image: url('../images/hard-skills-icons/sqlserver.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .prototipos {
+                background-image: url('../images/hard-skills-icons/prototipagem.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .photoshop {
+                background-image: url('../images/hard-skills-icons/photoshop.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .after-effects {
+                background-image: url('../images/hard-skills-icons/after_effects.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .illustrator {
+                background-image: url('../images/hard-skills-icons/illustrator.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .cinema4d {
+                background-image: url('../images/hard-skills-icons/c4d.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+        }  
+    } 
+    
+    .projects {
+        @include fontUbuntu();
+        background-color: $second-color;
+        color: $second-color;
+        height: 120vh;
+
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
         }
-    }    
+
+        .maduoutfit {
+            flex-direction: column;
+            background-color: $third-color;
+            border-radius: 20px;
+            margin: auto;
+
+            h2 {
+                width: 25%;
+                font-size: 30pt;
+                border: 4px solid $second-color;
+                border-radius: 10px;
+            }
+
+            .logo-madu {
+                background-image: url('../images/maduoutfit-logo.svg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 623px;
+                height: 287.42px;
+            }
+
+            p {
+                @include textAlign();
+                font-size: 20pt;
+            }
+        }
+    }
 }
 

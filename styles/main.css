@@ -144,7 +144,6 @@ header a:hover {
 .home-page .skills {
   font-family: 'Ubuntu', sans-serif;
   background-color: #3F8D1A;
-  height: 120vh;
 }
 
 .home-page .skills .img-fluid {
@@ -203,5 +202,114 @@ header a:hover {
   background-size: 100%;
   width: 122.74px;
   height: 166px;
+}
+
+.home-page .skills .hard-skills .php {
+  background-image: url("../images/hard-skills-icons/php.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .mysql {
+  background-image: url("../images/hard-skills-icons/mysql.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .sqlserver {
+  background-image: url("../images/hard-skills-icons/sqlserver.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .prototipos {
+  background-image: url("../images/hard-skills-icons/prototipagem.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .photoshop {
+  background-image: url("../images/hard-skills-icons/photoshop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .after-effects {
+  background-image: url("../images/hard-skills-icons/after_effects.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .illustrator {
+  background-image: url("../images/hard-skills-icons/illustrator.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .cinema4d {
+  background-image: url("../images/hard-skills-icons/c4d.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .projects {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #323232;
+  color: #323232;
+  height: 120vh;
+}
+
+.home-page .projects .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .projects .maduoutfit {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3F8D1A;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.home-page .projects .maduoutfit h2 {
+  width: 25%;
+  font-size: 30pt;
+  border: 4px solid #323232;
+  border-radius: 10px;
+}
+
+.home-page .projects .maduoutfit .logo-madu {
+  background-image: url("../images/maduoutfit-logo.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 623px;
+  height: 287.42px;
+}
+
+.home-page .projects .maduoutfit p {
+  text-align: left;
+  font-size: 20pt;
 }
 /*# sourceMappingURL=main.css.map */

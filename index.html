@@ -27,10 +27,10 @@
           
             <!-- conteúdo do overlay -->
             <div class="overlay-content">
-              <a href="#" onclick="welcomeScroll();closeNav()">Sobre mim</a>
+              <a href="#" onclick="presentationScroll();closeNav()">Sobre mim</a>
               <a href="#" onclick="skillsScroll();closeNav()">Habilidades</a>
-              <a href="index.html" onclick="closeNav()">Projetos</a>
-              <a href="index.html" onclick="closeNav()">Contato</a>
+              <a href="#" onclick="projectsScroll();closeNav()">Projetos</a>
+              <a href="#" onclick="closeNav()">Contato</a>
             </div>
         </div>
         
@@ -39,7 +39,7 @@
             <!-- recepção da home-page -->
             <div id="reception" class="reception col-12 m-0 p-0">
                 <!-- scroll down -->
-                <span class="scroll-down" onclick="welcomeScroll()"></span>
+                <span class="scroll-down" onclick="presentationScroll()"></span>
                 <!-- imagem da recepção -->
                 <figure class="m-0 p-0">
                     <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
@@ -67,14 +67,36 @@
             <div id="skills" class="skills m-0 p-0 text-center">
                 <img src="images/presentation-skills.svg" class="img-fluid m-0 p-0">
 
-                <div id="hard-skills" class="mt-5 hard-skills d-flex align-items-center p-3 col-11">
+                <div id="hard-skills" class="mt-5 mb-5 hard-skills d-flex align-items-center p-3 col-11">
                     <h2 class="mb-3 p-0">HABILIDADES</h2>
                     <div class="d-flex align-items-center">
                         <span class="javascript mr-5"></span>
                         <span class="html mr-5"></span>
                         <span class="css mr-5"></span>
-                        <span class="c-sharp"></span>
+                        <span class="c-sharp mr-5"></span>
+                        <span class="php mr-5"></span>
+                        <span class="mysql"></span>
                     </div>
+                    <div class="d-flex align-items-center">
+                        <span class="sqlserver mr-5"></span>
+                        <span class="prototipos mr-5"></span>
+                        <span class="photoshop mr-5"></span>
+                        <span class="after-effects mr-5"></span>
+                        <span class="illustrator mr-5"></span>
+                        <span class="cinema4d"></span>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="projects m-0 p-0 text-center">
+                <img src="images/skills-projects.svg" class="img-fluid m-0 p-0">
+                <div id="projects" class="mt-5 maduoutfit d-flex align-items-center p-3 col-11 text-center">
+                    <h2 class="mb-4 p-0">PROJETOS</h2>
+
+                    <span class="logo-madu"></span>
+
+                    <p class="text-left mt-4">MaduOutfit é um e-commerce de roupas. Com a ajuda de mais duas pessoas realizei a identidade visual da loja e o desenvolvimento web durante o curso técnico em informática. </p>
                 </div>
             </div>
         </main>
