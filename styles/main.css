@@ -23,22 +23,19 @@ header {
 }
 
 header .menu-icon {
-  background: url("../images/menu-icon.svg") no-repeat;
-  background-size: 100%;
-  color: #D5DBD5;
-  width: 30px;
-  height: 30px;
+  color: #3F8D1A;
+  font-size: 40px;
   cursor: pointer;
 }
 
-header a {
+header .murilo {
   text-decoration: none;
   color: #3F8D1A;
   font-weight: 400;
   font-size: 25pt;
 }
 
-header a:hover {
+header .murilo:hover {
   text-decoration: none;
   color: #3F8D1A;
 }

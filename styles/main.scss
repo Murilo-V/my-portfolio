@@ -49,15 +49,12 @@ header {
     @include fontUbuntu();
     
     .menu-icon {
-        background: url('../images/menu-icon.svg') no-repeat;
-        background-size: 100%;
-        color: $first-color;
-        width: 30px;
-        height: 30px;
+        color: $third-color;
+        font-size: 40px;
         cursor: pointer;
     }
 
-    a {
+    .murilo {
         text-decoration: none;
         color: $third-color;
         font-weight: 400;

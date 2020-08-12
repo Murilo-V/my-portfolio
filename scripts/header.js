@@ -1,19 +1,32 @@
-const header = document.getElementById('navbar');
+const bgHeader = document.getElementById('navbar');
+const muriloHeader = document.getElementById('murilo');
+const iconHeader = document.getElementById('menu-icon');
 
-header.style.transition = "150ms"
-header.style.transitionProperty = "background-color"
-  
-    $(window).scroll(function(){
+bgHeader.style.transition = "150ms";
+bgHeader.style.transitionProperty = "background-color";
+
+window.addEventListener("load",() => {
+    $(window).scroll(() => {
         if ($(window).scrollTop() > $("#reception").offset().top){
-            header.style.backgroundColor = "";
+            bgHeader.style.backgroundColor = "";
+            muriloHeader.style.color = "#3F8D1A";
+            iconHeader.style.color = "#3F8D1A";
         }
-        if ($(window).scrollTop() > $("#presentation").offset().top - 85){
-            header.style.backgroundColor = "#D5DBD5";
+        if ($(window).scrollTop() > $("#presentation").offset().top - 120){
+            bgHeader.style.backgroundColor = "#D5DBD5";
+            muriloHeader.style.color = "#323232";
+            iconHeader.style.color = "#323232";
         }
         if ($(window).scrollTop() > $("#skills").offset().top){
-            header.style.backgroundColor = "#323232";
+            bgHeader.style.backgroundColor = "#3F8D1A";
+            muriloHeader.style.color = "#D5DBD5";
+            iconHeader.style.color = "#D5DBD5";
         }
         if ($(window).scrollTop() > $("#projects").offset().top){
-            header.style.backgroundColor = "#D5DBD5";
+            bgHeader.style.backgroundColor = "#323232";
+            muriloHeader.style.color = "#3F8D1A";
+            iconHeader.style.color = "#3F8D1A";
         }
     });   
+});
+    
