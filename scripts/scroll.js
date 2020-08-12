@@ -14,7 +14,7 @@ function skillsScroll(){
 
 
 function projectsScroll(){
-  targetOffset = $("#projects").offset().top
+  targetOffset = $("#madu").offset().top
   $('html, body').animate({
     scrollTop: targetOffset - 80
   }, 700);

@@ -1,16 +1,19 @@
-function changeHeader() {
-    const header = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function (){
-        if (window.scrollY > 0) {
-            header.style.backgroundColor = "#D5DBD5";
-            header.style.transition = "300ms"
-            header.style.transitionProperty = "background-color"
-        }
-        else {
-            header.style.backgroundColor = ""
-        }
-    })
-};
+const header = document.getElementById('navbar');
 
-changeHeader();
+header.style.transition = "150ms"
+header.style.transitionProperty = "background-color"
+  
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > $("#reception").offset().top){
+            header.style.backgroundColor = "";
+        }
+        if ($(window).scrollTop() > $("#presentation").offset().top - 85){
+            header.style.backgroundColor = "#D5DBD5";
+        }
+        if ($(window).scrollTop() > $("#skills").offset().top){
+            header.style.backgroundColor = "#323232";
+        }
+        if ($(window).scrollTop() > $("#projects").offset().top){
+            header.style.backgroundColor = "#D5DBD5";
+        }
+    });   
