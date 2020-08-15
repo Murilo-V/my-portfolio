@@ -12,7 +12,6 @@ function skillsScroll(){
   }, 700);
 }
 
-
 function projectsScroll(){
   targetOffset = $("#madu").offset().top
   $('html, body').animate({
