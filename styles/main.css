@@ -331,4 +331,57 @@ header .murilo:hover {
   border-radius: 20px;
   color: #D5DBD5;
 }
+
+.home-page .contact {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #8A8A8A;
+  color: #8A8A8A;
+}
+
+.home-page .contact .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .contact .contact-form {
+  background-color: #323232;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  padding: 2% 5% 2% 5%;
+}
+
+.home-page .contact .contact-form h2 {
+  width: 25%;
+  font-size: 30pt;
+  border: 4px solid #8A8A8A;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.home-page .contact .contact-form label {
+  width: 100%;
+  font-size: 20pt;
+  margin: 0;
+}
+
+.home-page .contact .contact-form input, .home-page .contact .contact-form textarea {
+  background-color: #8A8A8A;
+  color: #323232;
+  font-size: 15pt;
+  padding: 0.4%;
+  margin: 0 0 3% 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.home-page .contact .contact-form textarea {
+  resize: none;
+}
 /*# sourceMappingURL=main.css.map */
