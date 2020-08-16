@@ -349,10 +349,6 @@ header .murilo:hover {
 .home-page .contact .contact-form {
   background-color: #323232;
   margin: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   border-radius: 20px;
   padding: 2% 5% 2% 5%;
 }
@@ -375,13 +371,92 @@ header .murilo:hover {
   background-color: #8A8A8A;
   color: #323232;
   font-size: 15pt;
-  padding: 0.4%;
+  padding: 0.5%;
   margin: 0 0 3% 0;
   border-radius: 10px;
   width: 100%;
 }
 
+.home-page .contact .contact-form input:focus, .home-page .contact .contact-form textarea:focus {
+  border: 0;
+  outline: none;
+}
+
 .home-page .contact .contact-form textarea {
   resize: none;
+  height: 25vh;
+}
+
+.home-page .contact .contact-form input[type=email], .home-page .contact .contact-form input[type=tel] {
+  padding: 1%;
+}
+
+.home-page .contact .contact-form .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .contact .contact-form .group-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.home-page .contact .contact-form .group .group-items + .group-items {
+  margin-left: 24px;
+}
+
+.home-page .contact .contact-form button {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  width: 24%;
+  padding: 1%;
+  font-size: 20pt;
+}
+
+.home-page .contact .contact-form button:focus {
+  outline: none;
+}
+
+.home-page .contact .contact-form h3 {
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.home-page .contact .contact-form h3 strong {
+  color: #3F8D1A;
+  cursor: pointer;
+}
+
+.home-page .contact .contact-form .submit-button {
+  background: #3F8D1A;
+  border: 8px solid #323232;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #323232;
+  margin: auto;
+}
+
+.home-page .contact .contact-form .clear-button {
+  background: #323232;
+  border: 8px solid #8A8A8A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #8A8A8A;
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */

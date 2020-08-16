@@ -371,7 +371,6 @@ header {
         .contact-form {
             background-color: $second-color;
             margin: auto;
-            flex-direction: column;
             border-radius: 20px;
             padding: 2% 5% 2% 5%;
 
@@ -393,23 +392,81 @@ header {
                 background-color: $fourth-color;
                 color: $second-color;
                 font-size: 15pt;
-                padding: 0.4%;
+                padding: 0.5%;
                 margin: 0 0 3% 0;
                 border-radius: 10px;
                 width: 100%;
+
+                &:focus {
+                    border: 0;
+                    outline: none;
+                }
             }
 
             textarea {
-                resize: none
+                resize: none;
+                height: 25vh;
             }
 
-            // #lblEmail, #lblTelefone {
-            //     width: 10%;
-            // }
+            input[type = email] , input[type = tel] {
+                padding: 1%
+            }
 
-            // input[type = email] , input[type = tel] {
-            //     width: 20%;
-            // }
+            .group {
+                display: flex;
+            }
+
+            .group-items {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .group .group-items + .group-items {
+                margin-left: 24px;;
+            }
+
+            button {
+                @include fontUbuntu();
+                font-weight: 500;
+                width: 24%;
+                padding: 1%;
+                font-size: 20pt;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 16pt;
+
+                strong {
+                    color: $third-color;
+                    cursor: pointer;
+                }
+            }
+
+            .submit-button {
+                background: $third-color;
+                border: 8px solid $second-color;
+                box-sizing: border-box;
+                box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                color: $second-color;
+                margin: auto;
+            }
+
+            .clear-button {
+                background: $second-color;
+                border: 8px solid $fourth-color;
+                box-sizing: border-box;
+                box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                color: $fourth-color;
+                margin: auto;
+            }
         }
     }   
 }

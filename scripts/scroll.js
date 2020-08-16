@@ -18,3 +18,10 @@ function projectsScroll(){
     scrollTop: targetOffset - 80
   }, 700);
 }
+
+function contactScroll(){
+  targetOffset = $("#contact-form").offset().top
+  $('html, body').animate({
+    scrollTop: targetOffset - 80
+  }, 700);
+}

@@ -27,5 +27,10 @@ window.addEventListener("load",() => {
             muriloHeader.style.color = "#3F8D1A";
             iconHeader.style.color = "#3F8D1A";
         }
+        if ($(window).scrollTop() > $("#contact").offset().top){
+            bgHeader.style.backgroundColor = "#8A8A8A";
+            muriloHeader.style.color = "#323232";
+            iconHeader.style.color = "#323232";
+        }
     });   
 });

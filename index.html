@@ -32,7 +32,7 @@
               <a href="#" onclick="presentationScroll();closeNav()">Sobre mim</a>
               <a href="#" onclick="skillsScroll();closeNav()">Habilidades</a>
               <a href="#" onclick="projectsScroll();closeNav()">Projetos</a>
-              <a href="#" onclick="closeNav()">Contato</a>
+              <a href="#" onclick="contactScroll();closeNav()">Contato</a>
             </div>
         </div>
         
@@ -106,23 +106,36 @@
             <div id="contact" class="contact  m-0 p-0">
                 <img src="images/projects-contact.svg" class="img-fluid m-0 p-0">
 
-                <form id="contact-form" action="" class="contact-form mt-5 col-11">
+                <form id="contact-form" action="" method="POST" class="contact-form mt-5 col-11">
                     <h2 class="mb-5 p-0 text-center">CONTATO</h2>
 
                     <label for="txtNome">Nome</label>
                     <input type="text" name="txtNome" id="txtNome">
 
-                    <label for="txtEmail" id="lblEmail">E-mail</label>
-                    <input type="email" name="txtEmail" id="txtEmail">
-
-                    <label for="txtTelefone" id="lblTelefone">Telefone</label>
-                    <input type="tel" name="txtTelefone" id="txtTelefone">
+                    <div class="group justify-content-between">
+                        <div class="group-items">
+                            <label for="txtEmail" id="lblEmail">E-mail</label>
+                            <input type="email" name="txtEmail" id="txtEmail">
+                        </div>
+                        
+                        <div class="group-items">
+                            <label for="txtTelefone" id="lblTelefone">Telefone</label>
+                            <input type="tel" name="txtTelefone" id="txtTelefone">
+                        </div>
+                    </div>
 
                     <label for="txtAssunto">Assunto</label>
                     <input type="text" name="txtAssunto" id="txtAssunto">
 
                     <label for="txtMensagem">Mensagem</label>
                     <textarea name="txtMensagem" id="txtMensagem" cols="30" rows="10"></textarea>
+
+                    <h3 class="text-center mb-4">Enviando você concorda com os <strong>Termos de Uso </strong> e a <strong>Política de Privacidade</strong>.</h3>
+
+                    <div class="buttons d-flex justify-content-center">
+                        <button type="submit" class="submit-button">ENVIAR</button>
+                        <button type="reset" class="clear-button">LIMPAR</button>
+                    </div>
                 </form>
             </div>
         </main>
