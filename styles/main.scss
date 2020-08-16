@@ -37,6 +37,16 @@ $fourth-color: #8A8A8A;
     border: 2px solid $second-color;
 }
 
+::selection {
+    background: $third-color;
+    color: $first-color;
+}
+
+::-moz-selection {
+    background: $third-color;
+    color: $first-color;
+}
+
 //retirar margin, padding e border padrão dos navegadores
 * {
     margin: 0;
@@ -469,4 +479,43 @@ header {
             }
         }
     }   
+}
+
+footer {
+    @include fontUbuntu();
+    background-color: $second-color;
+    flex-direction: column;
+
+    .img-fluid { 
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    h2 {
+        color: $fourth-color;
+        font-size: 15pt;
+    }
+
+    .social-media {
+        font-size:24px;
+    
+        a {
+            text-decoration: none;
+            color: $fourth-color;
+        }
+
+        i {
+            margin: 0 9px 0 9px;
+        }
+    }
+
+    p {
+        border-top: 2px dashed $third-color;
+        color: $fourth-color;
+        font-weight: 500;
+        font-size: 12pt;
+    }
 }

@@ -12,6 +12,21 @@
   border: 2px solid #323232;
 }
 
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -458,5 +473,47 @@ header .murilo:hover {
   border-radius: 20px;
   color: #8A8A8A;
   margin: auto;
+}
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #323232;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+footer h2 {
+  color: #8A8A8A;
+  font-size: 15pt;
+}
+
+footer .social-media {
+  font-size: 24px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #8A8A8A;
+}
+
+footer .social-media i {
+  margin: 0 9px 0 9px;
+}
+
+footer p {
+  border-top: 2px dashed #3F8D1A;
+  color: #8A8A8A;
+  font-weight: 500;
+  font-size: 12pt;
 }
 /*# sourceMappingURL=main.css.map */
