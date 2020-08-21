@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="scripts/overlay-menu.js"></script>
+    <script src="scripts/scroll.js"></script>
+ 
+    <title>Murilo V.</title>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0 row">
+         <!-- barra de menu -->
+        <header id="navbar" class="fixed-top d-flex justify-content-between align-items-center p-2">
+            <i onclick="openNav()" class="material-icons menu-icon" id="menu-icon">menu</i>
+            <a href="index.html" class="murilo" id="murilo">murilo.</a>
+        </header>
+
+        <!-- menu overlay -->
+        <div id="overlay" class="overlay">
+            <!-- botão que fecha o overlay -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- conteúdo do overlay -->
+            <div class="overlay-content">
+              <a href="#" onclick="presentationScroll();closeNav()">Sobre mim</a>
+              <a href="#" onclick="skillsScroll();closeNav()">Habilidades</a>
+              <a href="#" onclick="projectsScroll();closeNav()">Projetos</a>
+              <a href="#" onclick="contactScroll();closeNav()">Contato</a>
+            </div>
+        </div>
+        
+        <!-- conteúdo principal da página -->
+        <main id="home-page" class="home-page col-12 m-0 p-0">
+            <!-- recepção da home-page -->
+            <div id="reception" class="reception col-12 m-0 p-0">
+                <!-- scroll down -->
+                <span class="scroll-down" onclick="presentationScroll()"></span>
+                <!-- imagem da recepção -->
+                <figure class="m-0 p-0">
+                    <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
+                </figure>
+                <br>
+            </div>
+            <!-- apresentação -->
+            <div id="presentation" class="presentation text-center m-0 p-0">
+                <h1 class="mb-4">Olá, seja muito bem-vindo.</h1>
+
+                <div class="about d-flex align-items-center p-3 mb-5 col-11">
+                    <h2 class="mb-3 p-0">SOBRE MIM</h2>
+
+                    <p>Sou desenvolvedor junior e desde a infância me interesso e tenho contato com computadores. Aprendi de forma autodidata sobre design gráfico e acabei por conhecer e me formar na área de Tecnologia da Informação.</p>
+           
+                    <h3 class="mb-3 p-0">FORMAÇÃO</h3>
+                    <ul>
+                        <li>Bootcamp UX/UI Design - How Bootcamps, 2020 - 2020;</li>
+                        <li>Curso Técnico de Nível Médio em Informática - Senac, 2018 - 2020;</li>
+                        <li>Certificação Cisco IT Essentials - Cisco Networking Academy 2019 - 2019.</li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+
+            <div id="skills" class="skills m-0 p-0 text-center">
+                <img src="images/presentation-skills.svg" class="img-fluid m-0 p-0" alt="Transição de Sobre para Habilidades">
+
+                <div id="hard-skills" class="mt-5 mb-5 hard-skills d-flex align-items-center p-3 col-11">
+                    <h2 class="mb-3 p-0">HABILIDADES</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="javascript mr-5"></span>
+                        <span class="html mr-5"></span>
+                        <span class="css mr-5"></span>
+                        <span class="c-sharp mr-5"></span>
+                        <span class="php mr-5"></span>
+                        <span class="mysql"></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="sqlserver mr-5"></span>
+                        <span class="prototipos mr-5"></span>
+                        <span class="photoshop mr-5"></span>
+                        <span class="after-effects mr-5"></span>
+                        <span class="illustrator mr-5"></span>
+                        <span class="cinema4d"></span>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div id="projects" class="projects m-0 p-0 text-center">
+                <img src="images/skills-projects.svg" class="img-fluid m-0 p-0" alt="Transição de Habilidades para Projetos">
+                <div id="madu" class="mt-5 maduoutfit d-flex align-items-center p-3 col-11 text-center">
+                    <h2 class="mb-4 p-0">PROJETOS</h2>
+
+                    <span class="logo-madu"></span>
+
+                    <p class="text-left mt-4 p-3 mr-3 ml-3">MaduOutfit é um e-commerce de roupas. Com a ajuda de mais duas pessoas realizei a identidade visual da loja e o desenvolvimento web durante o curso técnico em informática. </p>
+                </div>
+            </div>
+
+            <div id="contact" class="contact  m-0 p-0">
+                <img src="images/projects-contact.svg" class="img-fluid m-0 p-0" alt="Transição de Projetos para Contato">
+
+                <form id="contact-form" action="email-confirmed.html" method="POST" class="contact-form mt-5 col-11" netlify data-netlify="true">
+                    <h2 class="mb-5 p-0 text-center">CONTATO</h2>
+
+                    <label for="txtNome">Nome</label>
+                    <input type="text" name="txtNome" id="txtNome" required>
+
+                    <div class="group justify-content-between">
+                        <div class="group-items">
+                            <label for="txtEmail" id="lblEmail">E-mail</label>
+                            <input type="email" name="txtEmail" id="txtEmail" required>
+                        </div>
+                        
+                        <div class="group-items">
+                            <label for="txtTelefone" id="lblTelefone">Telefone</label>
+                            <input type="tel" name="txtTelefone" id="txtTelefone" placeholder="Exemplo: 11 91234-5678" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+                        </div>
+                    </div>
+
+                    <label for="txtAssunto">Assunto</label>
+                    <input type="text" name="txtAssunto" id="txtAssunto" required>
+
+                    <label for="txtMensagem">Mensagem</label>
+                    <textarea name="txtMensagem" id="txtMensagem" cols="30" rows="10" required></textarea>
+
+                    <h3 class="text-center mb-4">Enviando você concorda com os <strong>Termos de Uso </strong> e a <strong>Política de Privacidade</strong>.</h3>
+
+                    <div class="buttons d-flex justify-content-center">
+                        <button type="submit" class="submit-button">ENVIAR</button>
+                        <button type="reset" class="clear-button">LIMPAR</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="col-12 m-0 p-0 d-flex align-items-center">
+            <img src="images/contact-footer.svg" class="img-fluid m-0 p-0" alt="Transição de Contato para Rodapé">
+
+            <h2 class="mt-4">Mídias sociais</h2>
+
+            <div class="social-media mb-4">
+                <a href="https://github.com/Murilo-V" target="_blank"><i class='fab fa-github'></i></a>
+                <a href="https://www.linkedin.com/in/Murilo-V" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+            </div>
+
+           <p class="pt-4">Copyright &copy; 2020 Todos os direitos reservados. — Murilo V. </p> 
+           
+        </footer>
+    </div>  
+
+    <!-- script que troca cor da barra de menu ao rolar a página -->
+    <script src="scripts/header.js"></script>  
+</body>
+</html>

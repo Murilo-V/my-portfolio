@@ -1,0 +1,47 @@
+footer {
+    @include fontUbuntu();
+    background-color: $second-color;
+    flex-direction: column; 
+
+    .img-fluid { 
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    h2 {
+        color: $fourth-color;
+        font-size: 15pt;
+    }
+
+    .social-media {
+        font-size:24px;
+    
+        a {
+            text-decoration: none;
+            color: $fourth-color;
+        }
+
+        i {
+            margin: 0 9px 0 9px;
+        }
+    }
+
+    p {
+        border-top: 2px dashed $third-color;
+        color: $fourth-color;
+        font-weight: 500;
+        font-size: 12pt;
+    }
+}
+
+.email-confirmed {
+     background-color: $fourth-color;
+
+     h1 {
+        background-color: $fourth-color;
+        color: $second-color;
+     }
+}

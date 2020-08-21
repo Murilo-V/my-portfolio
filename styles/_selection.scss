@@ -1,0 +1,9 @@
+::selection {
+    background: $third-color;
+    color: $first-color;
+}
+
+::-moz-selection {
+    background: $third-color;
+    color: $first-color;
+}

@@ -1,0 +1,15 @@
+@mixin fontUbuntu {
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+@mixin textAlign {
+    text-align: left;
+}
+
+@mixin textShadow {
+    text-shadow: 1px 1px 4px #494949;
+}
+
+@mixin boxShadow {
+    box-shadow: 1px 1px 4px #494949;
+}

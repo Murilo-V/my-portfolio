@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@import 'mixins';
+@import 'colors';
+@import 'header'; 
+header {
+    background-color: $fourth-color;
+
+    .murilo {
+        color: $second-color !important;
+    }
+    
+}
+
+@import 'footer';
+
+.img-fluid {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.container-fluid {
+    @include fontUbuntu();
+    background-color: $fourth-color;
+
+    .email-confirmed {
+        height: 100vh;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 700;
+            font-size: 45pt;
+            color: $second-color;
+        }
+
+        p {
+            font-size: 20pt;
+        }
+
+        .back-home {
+            background-color: $third-color;
+            font-weight: 500;
+            width: 24%;
+            padding: 1%;
+            font-size: 20pt;
+            border: 8px solid $second-color;
+            box-sizing: border-box;
+            box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            color: $second-color;
+            margin: auto;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header .menu-icon {
+  color: #3F8D1A;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+header .murilo {
+  text-decoration: none;
+  color: #3F8D1A;
+  font-weight: 400;
+  font-size: 25pt;
+}
+
+header .murilo:hover {
+  text-decoration: none;
+  color: #3F8D1A;
+}
+
+header {
+  background-color: #8A8A8A;
+}
+
+header .murilo {
+  color: #323232 !important;
+}
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #323232;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+footer h2 {
+  color: #8A8A8A;
+  font-size: 15pt;
+}
+
+footer .social-media {
+  font-size: 24px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #8A8A8A;
+}
+
+footer .social-media i {
+  margin: 0 9px 0 9px;
+}
+
+footer p {
+  border-top: 2px dashed #3F8D1A;
+  color: #8A8A8A;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.email-confirmed {
+  background-color: #8A8A8A;
+}
+
+.email-confirmed h1 {
+  background-color: #8A8A8A;
+  color: #323232;
+}
+
+.img-fluid {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.container-fluid {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #8A8A8A;
+}
+
+.container-fluid .email-confirmed {
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-fluid .email-confirmed h1 {
+  font-weight: 700;
+  font-size: 45pt;
+  color: #323232;
+}
+
+.container-fluid .email-confirmed p {
+  font-size: 20pt;
+}
+
+.container-fluid .email-confirmed .back-home {
+  background-color: #3F8D1A;
+  font-weight: 500;
+  width: 24%;
+  padding: 1%;
+  font-size: 20pt;
+  border: 8px solid #323232;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #323232;
+  margin: auto;
+}
+
+.container-fluid .email-confirmed .back-home:focus {
+  outline: none;
+}
+/*# sourceMappingURL=emailconfirmed.css.map */

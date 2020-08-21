@@ -1,0 +1,344 @@
+.home-page {
+    .reception { 
+        background-color: $first-color;
+        .scroll-down {
+            background-image: url('../images/scroll-down.svg');
+            background-size: 100%;
+            cursor: pointer;
+            position: absolute;
+            width: 47.75px;
+            height: 171.65px;
+            top: 40vh;
+        }
+    
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            }
+    }
+
+    .presentation {
+        background-color: $first-color;
+        @include fontUbuntu(); 
+    
+        h1 {
+            font-weight: 700;
+            font-size: 45pt;
+            color: $second-color;
+        }
+    
+        .about {
+            color: $first-color;
+            background-color: $second-color; 
+            margin: auto;
+            border-radius: 20px;
+            flex-direction: column;
+    
+            h2,h3 {
+                width: 23%;
+                font-size: 30pt;
+                border: 4px solid $first-color;
+                border-radius: 10px;
+            }
+    
+            p {
+                @include textAlign();
+                font-size: 20pt;
+            }
+    
+            ul {
+                @include textAlign();
+                font-size: 20pt;
+            }
+        }
+    }
+
+    .skills {
+        @include fontUbuntu();
+        background-color: $third-color;
+
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .hard-skills {
+            margin: auto;
+            color: $third-color;
+            background-color: $first-color;
+            border-radius: 20px;
+            flex-direction: column;
+
+            h2 {
+                width: 25%;
+                font-size: 30pt;
+                border: 4px solid $third-color;
+                border-radius: 10px;
+            }
+
+            .javascript {
+                background-image: url('../images/hard-skills-icons/javascript.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .html {
+                background-image: url('../images/hard-skills-icons/html.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .css {
+                background-image: url('../images/hard-skills-icons/css.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .c-sharp {
+                background-image: url('../images/hard-skills-icons/c-sharp.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .php {
+                background-image: url('../images/hard-skills-icons/php.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .mysql {
+                background-image: url('../images/hard-skills-icons/mysql.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .sqlserver {
+                background-image: url('../images/hard-skills-icons/sqlserver.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .prototipos {
+                background-image: url('../images/hard-skills-icons/prototipagem.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .photoshop {
+                background-image: url('../images/hard-skills-icons/photoshop.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .after-effects {
+                background-image: url('../images/hard-skills-icons/after_effects.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .illustrator {
+                background-image: url('../images/hard-skills-icons/illustrator.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+
+            .cinema4d {
+                background-image: url('../images/hard-skills-icons/c4d.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 122.74px;
+                height: 166px;
+            }
+        }  
+    } 
+    
+    .projects {
+        @include fontUbuntu();
+        background-color: $second-color;
+        color: $second-color;
+        height: 120vh;
+
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .maduoutfit {
+            flex-direction: column;
+            background-color: $third-color;
+            border-radius: 20px;
+            margin: auto;
+
+            h2 {
+                width: 25%;
+                font-size: 30pt;
+                border: 4px solid $second-color;
+                border-radius: 10px;
+            }
+
+            .logo-madu {
+                background-image: url('../images/maduoutfit-logo.svg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 623px;
+                height: 287.42px;
+            }
+
+            p {
+                @include textAlign();
+                font-size: 20pt;
+                background-color: $second-color;
+                border-radius: 20px;
+                color: $first-color;
+            }
+        }
+    }
+
+    .contact {
+        @include fontUbuntu();
+        background-color: $fourth-color;
+        color: $fourth-color;
+        
+   
+
+        .img-fluid { 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .contact-form {
+            background-color: $second-color;
+            margin: auto;
+            border-radius: 20px;
+            padding: 2% 5% 2% 5%;
+
+            h2 {
+                width: 25%;
+                font-size: 30pt;
+                border: 4px solid $fourth-color;
+                border-radius: 10px;
+                margin: auto;
+            }
+
+            label {
+                width: 100%;
+                font-size: 20pt;
+                margin: 0;
+            }
+
+            input, textarea {
+                background-color: $fourth-color;
+                color: $second-color;
+                font-size: 15pt;
+                padding: 0.5%;
+                margin: 0 0 3% 0;
+                border-radius: 10px;
+                width: 100%;
+
+                &:focus {
+                    border: 0;
+                    outline: none;
+                }
+            }
+
+            textarea {
+                resize: none;
+                height: 25vh;
+            }
+
+            input[type = email] , input[type = tel] {
+                padding: 1%
+            }
+
+            .group {
+                display: flex;
+            }
+
+            .group-items {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .group .group-items + .group-items {
+                margin-left: 24px;;
+            }
+
+            button {
+                @include fontUbuntu();
+                font-weight: 500;
+                width: 24%;
+                padding: 1%;
+                font-size: 20pt;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 16pt;
+
+                strong {
+                    color: $third-color;
+                    cursor: pointer;
+                }
+            }
+
+            .submit-button {
+                background: $third-color;
+                border: 8px solid $second-color;
+                box-sizing: border-box;
+                box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                color: $second-color;
+                margin: auto;
+            }
+
+            .clear-button {
+                background: $second-color;
+                border: 8px solid $fourth-color;
+                box-sizing: border-box;
+                box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                color: $fourth-color;
+                margin: auto;
+            }
+        }
+    }   
+}

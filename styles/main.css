@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #323232;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3F8D1A;
+  border-radius: 10px;
+  border: 2px solid #323232;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-webkit-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+::placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.8;
+}
+
+::-ms-input-placeholder {
+  color: #323232;
+}
+
+header {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header .menu-icon {
+  color: #3F8D1A;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+header .murilo {
+  text-decoration: none;
+  color: #3F8D1A;
+  font-weight: 400;
+  font-size: 25pt;
+}
+
+header .murilo:hover {
+  text-decoration: none;
+  color: #3F8D1A;
+}
+
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #323232;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #8A8A8A;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #D5DBD5;
+  text-decoration: none;
+}
+
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.home-page .reception {
+  background-color: #D5DBD5;
+}
+
+.home-page .reception .scroll-down {
+  background-image: url("../images/scroll-down.svg");
+  background-size: 100%;
+  cursor: pointer;
+  position: absolute;
+  width: 47.75px;
+  height: 171.65px;
+  top: 40vh;
+}
+
+.home-page .reception .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .presentation {
+  background-color: #D5DBD5;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home-page .presentation h1 {
+  font-weight: 700;
+  font-size: 45pt;
+  color: #323232;
+}
+
+.home-page .presentation .about {
+  color: #D5DBD5;
+  background-color: #323232;
+  margin: auto;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page .presentation .about h2, .home-page .presentation .about h3 {
+  width: 23%;
+  font-size: 30pt;
+  border: 4px solid #D5DBD5;
+  border-radius: 10px;
+}
+
+.home-page .presentation .about p {
+  text-align: left;
+  font-size: 20pt;
+}
+
+.home-page .presentation .about ul {
+  text-align: left;
+  font-size: 20pt;
+}
+
+.home-page .skills {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #3F8D1A;
+}
+
+.home-page .skills .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .skills .hard-skills {
+  margin: auto;
+  color: #3F8D1A;
+  background-color: #D5DBD5;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page .skills .hard-skills h2 {
+  width: 25%;
+  font-size: 30pt;
+  border: 4px solid #3F8D1A;
+  border-radius: 10px;
+}
+
+.home-page .skills .hard-skills .javascript {
+  background-image: url("../images/hard-skills-icons/javascript.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .html {
+  background-image: url("../images/hard-skills-icons/html.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .css {
+  background-image: url("../images/hard-skills-icons/css.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .c-sharp {
+  background-image: url("../images/hard-skills-icons/c-sharp.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .php {
+  background-image: url("../images/hard-skills-icons/php.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .mysql {
+  background-image: url("../images/hard-skills-icons/mysql.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .sqlserver {
+  background-image: url("../images/hard-skills-icons/sqlserver.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .prototipos {
+  background-image: url("../images/hard-skills-icons/prototipagem.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .photoshop {
+  background-image: url("../images/hard-skills-icons/photoshop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .after-effects {
+  background-image: url("../images/hard-skills-icons/after_effects.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .illustrator {
+  background-image: url("../images/hard-skills-icons/illustrator.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .skills .hard-skills .cinema4d {
+  background-image: url("../images/hard-skills-icons/c4d.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 122.74px;
+  height: 166px;
+}
+
+.home-page .projects {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #323232;
+  color: #323232;
+  height: 120vh;
+}
+
+.home-page .projects .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .projects .maduoutfit {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3F8D1A;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.home-page .projects .maduoutfit h2 {
+  width: 25%;
+  font-size: 30pt;
+  border: 4px solid #323232;
+  border-radius: 10px;
+}
+
+.home-page .projects .maduoutfit .logo-madu {
+  background-image: url("../images/maduoutfit-logo.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 623px;
+  height: 287.42px;
+}
+
+.home-page .projects .maduoutfit p {
+  text-align: left;
+  font-size: 20pt;
+  background-color: #323232;
+  border-radius: 20px;
+  color: #D5DBD5;
+}
+
+.home-page .contact {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #8A8A8A;
+  color: #8A8A8A;
+}
+
+.home-page .contact .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.home-page .contact .contact-form {
+  background-color: #323232;
+  margin: auto;
+  border-radius: 20px;
+  padding: 2% 5% 2% 5%;
+}
+
+.home-page .contact .contact-form h2 {
+  width: 25%;
+  font-size: 30pt;
+  border: 4px solid #8A8A8A;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.home-page .contact .contact-form label {
+  width: 100%;
+  font-size: 20pt;
+  margin: 0;
+}
+
+.home-page .contact .contact-form input, .home-page .contact .contact-form textarea {
+  background-color: #8A8A8A;
+  color: #323232;
+  font-size: 15pt;
+  padding: 0.5%;
+  margin: 0 0 3% 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.home-page .contact .contact-form input:focus, .home-page .contact .contact-form textarea:focus {
+  border: 0;
+  outline: none;
+}
+
+.home-page .contact .contact-form textarea {
+  resize: none;
+  height: 25vh;
+}
+
+.home-page .contact .contact-form input[type=email], .home-page .contact .contact-form input[type=tel] {
+  padding: 1%;
+}
+
+.home-page .contact .contact-form .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .contact .contact-form .group-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.home-page .contact .contact-form .group .group-items + .group-items {
+  margin-left: 24px;
+}
+
+.home-page .contact .contact-form button {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  width: 24%;
+  padding: 1%;
+  font-size: 20pt;
+}
+
+.home-page .contact .contact-form button:focus {
+  outline: none;
+}
+
+.home-page .contact .contact-form h3 {
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.home-page .contact .contact-form h3 strong {
+  color: #3F8D1A;
+  cursor: pointer;
+}
+
+.home-page .contact .contact-form .submit-button {
+  background: #3F8D1A;
+  border: 8px solid #323232;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #323232;
+  margin: auto;
+}
+
+.home-page .contact .contact-form .clear-button {
+  background: #323232;
+  border: 8px solid #8A8A8A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #8A8A8A;
+  margin: auto;
+}
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #323232;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+footer h2 {
+  color: #8A8A8A;
+  font-size: 15pt;
+}
+
+footer .social-media {
+  font-size: 24px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #8A8A8A;
+}
+
+footer .social-media i {
+  margin: 0 9px 0 9px;
+}
+
+footer p {
+  border-top: 2px dashed #3F8D1A;
+  color: #8A8A8A;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.email-confirmed {
+  background-color: #8A8A8A;
+}
+
+.email-confirmed h1 {
+  background-color: #8A8A8A;
+  color: #323232;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

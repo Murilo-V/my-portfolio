@@ -1,0 +1,21 @@
+header {
+    @include fontUbuntu();
+    
+    .menu-icon {
+        color: $third-color;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .murilo {
+        text-decoration: none;
+        color: $third-color;
+        font-weight: 400;
+        font-size: 25pt;
+    
+        &:hover {
+            text-decoration: none; 
+            color: $third-color;
+        }
+    }
+}

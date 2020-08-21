@@ -1,0 +1,42 @@
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0; 
+    background-color: $second-color;
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    @include fontUbuntu();
+    font-weight: 500;
+
+        a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: $fourth-color;
+            display: block; 
+            transition: 0.3s;
+
+            &:hover, &:focus {
+                color: $first-color;
+                text-decoration: none;
+            }
+         }
+
+         .overlay-content {
+            position: relative;
+            top: 25%; 
+            width: 100%; 
+            text-align: center;
+            margin-top: 30px;
+          }
+
+         .closebtn {
+            position: absolute;
+            top: 50px;
+            right: 45px;
+            font-size: 60px;
+          }
+  }
