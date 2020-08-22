@@ -11,6 +11,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="scripts/overlay-menu.js"></script>
     <script src="scripts/scroll.js"></script>
+    
  
     <title>Murilo V.</title>
 </head>
@@ -40,10 +41,9 @@
         <main id="home-page" class="home-page col-12 m-0 p-0">
             <!-- recepção da home-page -->
             <div id="reception" class="reception col-12 m-0 p-0">
-                <!-- scroll down -->
-                <span class="scroll-down" onclick="presentationScroll()"></span>
+                
                 <!-- imagem da recepção -->
-                <figure class="m-0 p-0">
+                <figure class="m-0 p-0" id="imgReception">
                     <img src="images/reception-background.svg" class="img-fluid m-0 p-0" alt="Letras do nome 'Murilo' ao redor de um Logo.">
                 </figure>
                 <br>
@@ -94,19 +94,21 @@
 
             <div id="projects" class="projects m-0 p-0 text-center">
                 <img src="images/skills-projects.svg" class="img-fluid m-0 p-0" alt="Transição de Habilidades para Projetos">
-                <div id="madu" class="mt-5 maduoutfit d-flex align-items-center p-3 col-11 text-center">
+                <div id="madu" class="mt-5 maduoutfit d-flex align-items-center mb-5 p-3 col-11 text-center">
                     <h2 class="mb-4 p-0">PROJETOS</h2>
 
-                    <span class="logo-madu"></span>
+                    <img src="images/maduoutfit-logo.svg" class="img-fluid m-0 p-0" alt="Transição de Habilidades para Projetos">
 
                     <p class="text-left mt-4 p-3 mr-3 ml-3">MaduOutfit é um e-commerce de roupas. Com a ajuda de mais duas pessoas realizei a identidade visual da loja e o desenvolvimento web durante o curso técnico em informática. </p>
                 </div>
+                <br>
             </div>
 
-            <div id="contact" class="contact  m-0 p-0">
+            <div id="contact" class="contact m-0 p-0">
+               
                 <img src="images/projects-contact.svg" class="img-fluid m-0 p-0" alt="Transição de Projetos para Contato">
 
-                <form id="contact-form" action="email-confirmed.html" method="POST" class="contact-form mt-5 col-11" netlify data-netlify="true">
+                <form id="contact-form" action="email-confirmed.html" method="POST" class="contact-form mt-5 col-11 " netlify data-netlify="true">
                     <h2 class="mb-5 p-0 text-center">CONTATO</h2>
 
                     <label for="txtNome">Nome</label>
@@ -133,8 +135,8 @@
                     <h3 class="text-center mb-4">Enviando você concorda com os <strong>Termos de Uso </strong> e a <strong>Política de Privacidade</strong>.</h3>
 
                     <div class="buttons d-flex justify-content-center">
-                        <button type="submit" class="submit-button">ENVIAR</button>
-                        <button type="reset" class="clear-button">LIMPAR</button>
+                        <button type="submit" class="submit-button mb-4">ENVIAR</button>
+                        <button type="reset" class="clear-button mb-4">LIMPAR</button>
                     </div>
                 </form>
             </div>
@@ -157,5 +159,8 @@
 
     <!-- script que troca cor da barra de menu ao rolar a página -->
     <script src="scripts/header.js"></script>  
+
+    <!-- responsividade -->
+    <script src="scripts/responsive.js"></script>
 </body>
 </html>

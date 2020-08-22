@@ -1,11 +1,13 @@
+@import 'colors';
+@import 'mixins';
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-@import 'colors';
-@import 'mixins';
+@import 'responsive';
 @import 'scrollbar';
 @import 'selection';
 @import 'placeholder';
@@ -13,4 +15,4 @@
 @import 'overlay-menu';
 @import 'home-page';
 @import 'footer';
-@import 'responsive';
+

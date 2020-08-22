@@ -4,6 +4,89 @@
   border: 0;
 }
 
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-page h2, .home-page h3 {
+    width: 40% !important;
+  }
+  .home-page .hard-skills div span {
+    width: 71px !important;
+    height: 87.3px !important;
+  }
+  .logo-madu {
+    width: 393px !important;
+    height: 181.31px !important;
+  }
+  .contact-form h3 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-page h2, .home-page h3 {
+    width: 50% !important;
+  }
+  .home-page .contact-form h3 {
+    width: 100% !important;
+  }
+  .home-page .contact-form button {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-page h1 {
+    font-size: 38pt !important;
+  }
+  .home-page h2, .home-page h3 {
+    width: 100% !important;
+  }
+  .home-page .contact-form h3 {
+    font-size: 12pt !important;
+  }
+  .home-page .contact-form .buttons {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .home-page .contact-form .buttons button {
+    width: 80% !important;
+  }
+  .home-page .contact-form .group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-page .contact-form .group .group-items + .group-items {
+    margin-left: 0 !important;
+  }
+  footer p {
+    font-size: 10pt !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hard-skills div span {
+    width: 33.36px !important;
+    height: 41.02px !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 14px;
 }
@@ -321,7 +404,6 @@ header .murilo:hover {
   font-family: 'Ubuntu', sans-serif;
   background-color: #323232;
   color: #323232;
-  height: 120vh;
 }
 
 .home-page .projects .img-fluid {
@@ -347,14 +429,6 @@ header .murilo:hover {
   font-size: 30pt;
   border: 4px solid #323232;
   border-radius: 10px;
-}
-
-.home-page .projects .maduoutfit .logo-madu {
-  background-image: url("../images/maduoutfit-logo.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 623px;
-  height: 287.42px;
 }
 
 .home-page .projects .maduoutfit p {
@@ -542,16 +616,5 @@ footer p {
 .email-confirmed h1 {
   background-color: #8A8A8A;
   color: #323232;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }
 /*# sourceMappingURL=main.css.map */

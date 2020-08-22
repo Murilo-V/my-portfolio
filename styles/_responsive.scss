@@ -6,3 +6,102 @@
       right: 35px;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .home-page {
+      h2, h3 {
+        width: 40% !important;
+      }
+
+      .hard-skills {
+        div {
+          span {
+            width: 71px !important;
+            height: 87.3px !important;
+          }
+        }
+      } 
+    }
+
+    .logo-madu {
+      width: 393px !important;
+      height: 181.31px !important;
+  }
+
+    .contact-form {
+      h3 {
+        width: 100% !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .home-page {
+      h2, h3 {
+        width: 50% !important;
+      }
+
+     
+      .contact-form {
+        h3 {
+          width: 100% !important;
+        }
+
+        button {
+          width: 40% !important;
+        }
+      } 
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .home-page {
+      h1 {
+        font-size: 38pt !important;
+      }
+
+      h2, h3 {
+        width: 100% !important;
+      }
+
+      .contact-form {
+        h3 {
+          font-size: 12pt !important; 
+        }
+
+        .buttons {
+          flex-direction: column !important;
+
+          button {
+            width: 80% !important;
+          }
+        }
+
+        .group {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .group .group-items + .group-items {
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  footer {
+    p {
+      font-size: 10pt !important;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hard-skills {
+    div {
+      span {
+        width: 33.36px !important;
+        height: 41.02px !important;
+      }
+    }
+  } 
+}
