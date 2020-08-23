@@ -76,6 +76,9 @@
     margin-left: 0 !important;
   }
   footer p {
+    font-size: 8pt !important;
+  }
+  footer h2 {
     font-size: 10pt !important;
   }
 }
@@ -524,9 +527,21 @@ header .murilo:hover {
 .home-page .contact .contact-form button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  width: 24%;
-  padding: 1%;
+  width: 22%;
+  padding: 0.8%;
   font-size: 20pt;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -moz-transition-property: transform;
+}
+
+.home-page .contact .contact-form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .home-page .contact .contact-form button:focus {

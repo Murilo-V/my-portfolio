@@ -292,9 +292,16 @@
             button {
                 @include fontUbuntu();
                 font-weight: 500;
-                width: 24%;
-                padding: 1%;
+                width: 22%;
+                padding: 0.8%;
                 font-size: 20pt;
+                transition: 500ms;
+                transition-property: transform;
+                    -moz-transition-property: transform;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
 
                 &:focus {
                     outline: none;

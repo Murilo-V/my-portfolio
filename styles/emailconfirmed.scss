@@ -7,6 +7,34 @@
 @import 'mixins';
 @import 'colors';
 @import 'header'; 
+
+@media screen and (max-width: 600px) {
+    footer {
+      p {
+        font-size: 8pt !important;
+      }
+  
+      h2 {
+          font-size: 10pt !important;
+      }
+    }
+  
+  .email-confirmed {
+      h1 {
+          font-size: 30pt !important;
+      }
+  
+      p {
+          font-size: 15pt !important;
+      }
+      
+      .back-home {
+          font-size: 18pt !important;
+          width: 80% !important;
+      }
+    }
+  }
+
 header {
     background-color: $fourth-color;
 
@@ -60,5 +88,3 @@ header {
         }
     }
 }
-
-

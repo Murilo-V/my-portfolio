@@ -26,6 +26,25 @@ header .murilo:hover {
   color: #3F8D1A;
 }
 
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 8pt !important;
+  }
+  footer h2 {
+    font-size: 10pt !important;
+  }
+  .email-confirmed h1 {
+    font-size: 30pt !important;
+  }
+  .email-confirmed p {
+    font-size: 15pt !important;
+  }
+  .email-confirmed .back-home {
+    font-size: 18pt !important;
+    width: 80% !important;
+  }
+}
+
 header {
   background-color: #8A8A8A;
 }
