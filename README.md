@@ -1,5 +1,5 @@
-<img src="images/mylogo.png" width="150" height="150" align="center">
-<h1 align="center">Murilo V. Portfolio</h1>
+<img src="images/mylogo.png" width="150" height="150">
+<h1>Murilo V. Portfolio</h1>
 
 ---
 
