@@ -1,4 +1,4 @@
-![](images/mylogo.png)
+<img src="images/mylogo.png" style="width: 20%;">
 <h1 align="center">Murilo V. Portfolio</h1>
 
 ---
