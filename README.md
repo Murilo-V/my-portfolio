@@ -1,4 +1,4 @@
-<img src="images/mylogo.png" width="100" height="100">
+<img src="images/mylogo.png" width="150" height="150" align="center">
 <h1 align="center">Murilo V. Portfolio</h1>
 
 ---
