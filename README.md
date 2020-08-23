@@ -1,3 +1,4 @@
+![](images/mylogo.png)
 <h1 align="center">Murilo V. Portfolio</h1>
 
 ---
@@ -7,7 +8,7 @@
 
 ---
 
-### Used Technologies
+## Used Technologies
 
 * HTML
 * CSS
