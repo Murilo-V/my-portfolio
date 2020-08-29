@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header .menu-icon {
+  color: #3F8D1A;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+header .murilo {
+  text-decoration: none;
+  color: #3F8D1A;
+  font-weight: 400;
+  font-size: 25pt;
+}
+
+header .murilo:hover {
+  text-decoration: none;
+  color: #3F8D1A;
+}
+
+header {
+  background-color: #323232;
+}
+
+header .murilo, header .menu-icon {
+  color: #3F8D1A;
+}
+
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #323232;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #8A8A8A;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #D5DBD5;
+  text-decoration: none;
+}
+
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.container-fluid {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #8A8A8A;
+}
+
+.container-fluid h1 {
+  font-size: 45pt;
+  font-weight: 600;
+  color: #323232;
+}
+
+.terms-of-use {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #323232;
+  margin: auto;
+  border-radius: 20px;
+  padding: 2% 5% 2% 5%;
+  color: #8A8A8A;
+  font-size: 20pt;
+  text-align: left;
+}
+
+.terms-of-use h2 {
+  padding: 0.2% 1% 0.2% 1%;
+  font-size: 30pt;
+  border: 4px solid #8A8A8A;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.terms-of-use p {
+  padding: 0% 2% 0% 2%;
+}
+
+.terms-of-use ul {
+  padding: 0% 5% 0% 5%;
+}
+
+.terms-of-use ul li {
+  padding-bottom: 2%;
+}
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #323232;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .img-fluid {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+footer h2 {
+  color: #8A8A8A;
+  font-size: 15pt;
+}
+
+footer .social-media {
+  font-size: 24px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #8A8A8A;
+}
+
+footer .social-media i {
+  margin: 0 9px 0 9px;
+}
+
+footer p {
+  border-top: 2px dashed #3F8D1A;
+  color: #8A8A8A;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.email-confirmed {
+  background-color: #8A8A8A;
+}
+
+.email-confirmed h1 {
+  background-color: #8A8A8A;
+  color: #323232;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #323232;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3F8D1A;
+  border-radius: 10px;
+  border: 2px solid #323232;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-webkit-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+::placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.8;
+}
+
+::-ms-input-placeholder {
+  color: #323232;
+}
+/*# sourceMappingURL=terms-of-use.css.map */

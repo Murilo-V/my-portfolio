@@ -26,6 +26,64 @@ header .murilo:hover {
   color: #3F8D1A;
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #323232;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3F8D1A;
+  border-radius: 10px;
+  border: 2px solid #323232;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-moz-selection {
+  background: #3F8D1A;
+  color: #D5DBD5;
+}
+
+::-webkit-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+::placeholder {
+  color: #323232;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+  opacity: 0.8;
+}
+
+::-ms-input-placeholder {
+  color: #323232;
+}
+
 @media screen and (max-width: 600px) {
   footer p {
     font-size: 8pt !important;
@@ -146,6 +204,18 @@ footer p {
   border-radius: 20px;
   color: #323232;
   margin: auto;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -moz-transition-property: transform;
+}
+
+.container-fluid .email-confirmed .back-home:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .container-fluid .email-confirmed .back-home:focus {

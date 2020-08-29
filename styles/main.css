@@ -553,9 +553,18 @@ header .murilo:hover {
   font-size: 16pt;
 }
 
-.home-page .contact .contact-form h3 strong {
+.home-page .contact .contact-form h3 a {
   color: #3F8D1A;
-  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.home-page .contact .contact-form h3 a:hover {
+  text-decoration: none;
+  color: #D5DBD5;
 }
 
 .home-page .contact .contact-form .submit-button {

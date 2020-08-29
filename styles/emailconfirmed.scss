@@ -7,6 +7,9 @@
 @import 'mixins';
 @import 'colors';
 @import 'header'; 
+@import 'scrollbar';
+@import 'selection';
+@import 'placeholder';
 
 @media screen and (max-width: 600px) {
     footer {
@@ -81,6 +84,13 @@ header {
             border-radius: 20px;
             color: $second-color;
             margin: auto;
+            transition: 500ms;
+            transition-property: transform;
+                -moz-transition-property: transform;
+
+            &:hover {
+                transform: scale(1.05);
+            } 
 
             &:focus {
                 outline: none;

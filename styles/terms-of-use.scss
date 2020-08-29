@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@import 'mixins';
+@import 'colors';
+@import 'header'; 
+header {
+    background-color: $second-color;
+
+    .murilo, .menu-icon {
+        color: $third-color;
+    }
+    
+}
+
+@import 'overlay-menu';
+
+.container-fluid {
+    @include fontUbuntu();
+    background-color: $fourth-color;
+
+    h1 {
+        font-size: 45pt;
+        font-weight: 600;
+        color: $second-color;
+    }
+}
+.terms-of-use {
+    flex-direction: column;
+    background-color: $second-color;
+    margin: auto;
+    border-radius: 20px;
+    padding: 2% 5% 2% 5%;
+    color: $fourth-color;
+    font-size: 20pt;
+    text-align: left;
+
+    h2 {
+        padding: 0.2% 1% 0.2% 1%;
+        font-size: 30pt;
+        border: 4px solid $fourth-color;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    p {
+        padding: 0% 2% 0% 2%;
+    }
+
+    ul {
+        padding: 0% 5% 0% 5%;
+
+        li {
+            padding-bottom: 2%;
+        }
+    }
+}
+
+@import 'footer';
+@import 'scrollbar';
+@import 'selection';
+@import 'placeholder';

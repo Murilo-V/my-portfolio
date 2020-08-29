@@ -312,9 +312,16 @@
                 font-weight: 400;
                 font-size: 16pt;
 
-                strong {
+                a {
                     color: $third-color;
-                    cursor: pointer;
+                    font-weight: 600;
+                    transition: 300ms;
+                    transition-property: color;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $first-color;
+                    }
                 }
             }
 
