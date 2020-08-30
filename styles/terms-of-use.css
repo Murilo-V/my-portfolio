@@ -4,6 +4,24 @@
   border: 0;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 38pt !important;
+  }
+  h2 {
+    font-size: 22pt !important;
+  }
+  p, ul, li {
+    font-size: 16pt !important;
+  }
+  footer p {
+    font-size: 8pt !important;
+  }
+  footer h2 {
+    font-size: 10pt !important;
+  }
+}
+
 header {
   font-family: 'Ubuntu', sans-serif;
 }

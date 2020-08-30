@@ -51,6 +51,9 @@
   .home-page h2, .home-page h3 {
     width: 100% !important;
   }
+  .home-page ul {
+    padding: 5% !important;
+  }
   .home-page .contact-form h3 {
     font-size: 12pt !important;
   }
