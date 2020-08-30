@@ -22,6 +22,12 @@ footer {
         a {
             text-decoration: none;
             color: $fourth-color;
+            transition: 300ms;
+            transition-property: color;
+
+            &:hover {
+                color: $first-color;
+            }
         }
 
         i {

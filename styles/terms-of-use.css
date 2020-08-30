@@ -173,6 +173,14 @@ footer .social-media {
 footer .social-media a {
   text-decoration: none;
   color: #8A8A8A;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+footer .social-media a:hover {
+  color: #D5DBD5;
 }
 
 footer .social-media i {
