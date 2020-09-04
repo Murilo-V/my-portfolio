@@ -158,7 +158,11 @@
   color: #D5DBD5;
   -webkit-transition: 100ms;
   transition: 100ms;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
   cursor: pointer;
+  text-shadow: 0px 4px 8px #000;
+  opacity: 0%;
 }
 
 header {
