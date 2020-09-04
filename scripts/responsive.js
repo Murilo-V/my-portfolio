@@ -23,7 +23,7 @@ function skillsMediaQueries(width800) {
         const imgReception = document.getElementById('imgReception');
         if (mobileReceptionX.matches) {
             if (mobileReceptionY.matches) {
-                imgReception.innerHTML = '<img src="images/mobile-reception.svg" class="img-fluid m-0 p-0" alt="Letras do nome Murilo ao redor de um Logo.">'
+                imgReception.innerHTML = '<img src="images/mobile-reception.svg" class="img-fluid m-0 p-0" alt="Letras do nome Murilo ao redor de um Logo.">';
             }
             
         }
